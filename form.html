@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="form1">
+    <input id="num1">
+    <input id="num2">
+
+
+</form>
+<button onclick="printSum()"id="add">+</button>
+Result:<p id="sum"></p>
+<script>
+    function printSum()
+    {
+    inp1=document.getElementById("num1");
+    inp2=document.getElementById("num2");
+    var x=inp1.value;
+    var y=inp2.value;
+    document.getElementById("sum").innerHTML=parseInt(x)+parseInt(y);
+    }
+  </script>
+
+
+<button onclick="printDiff()"id="sub">-</button>
+Result:<p id="min"></p>
+<script>
+    function printDiff()
+    {
+    inp1=document.getElementById("num1");
+    inp2=document.getElementById("num2");
+    var x=inp1.value;
+    var y=inp2.value;
+    document.getElementById("min").innerHTML=parseInt(x)-parseInt(y);
+    }
+
+
+</script>
+<button onclick="printDiv()"id="div">/</button>
+Result:<p id="Div"></p>
+<script>
+    function printDiv()
+    {
+    inp1=document.getElementById("num1");
+    inp2=document.getElementById("num2");
+    var x=inp1.value;
+    var y=inp2.value;
+    document.getElementById("Div").innerHTML=parseInt(x)/parseInt(y);
+    }
+
+</script>
+<button onclick="printMul()"id="mul">*</button>
+Result:<p id="Mul"></p>
+<script>
+    function printMul()
+    {
+    inp1=document.getElementById("num1");
+    inp2=document.getElementById("num2");
+    var x=inp1.value;
+    var y=inp2.value;
+    document.getElementById("Mul").innerHTML=parseInt(x)*parseInt(y);
+    }
+
+</script>
+
+</body>
+</html>
